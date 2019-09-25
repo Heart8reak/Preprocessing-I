@@ -54,6 +54,152 @@ table {
 }
 
 html, body {
+	margin: 0;
     height: 100%;
 }
 
+
+// ########################
+// Less Global Variables
+// ########################
+
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+	// border-top: 1px solid black;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	// border: 1px solid blue;
+	width: 80%;
+	background: black;
+	padding: 20px 0;
+
+	h1 {
+		font-family: 'Rock Salt', cursive;
+		font-size: 2em;
+		
+		a {
+			color: white;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+	}
+}
+
+nav {
+	display: flex;
+	justify-content: space-evenly;
+	color: white;
+
+	a {
+		margin: 0 25px;
+		color: white;
+		text-decoration: none;
+		font-family: 'Architects Daughter', cursive;
+	}
+}
+
+.home-top {
+	margin-top: 100px;
+	
+	.img-profile img {
+		width: 50%;
+		border-radius: 50%;
+		margin: 0 25%;
+		// border: 1px solid red;
+	}	
+}
+
+.home-bottom {
+	display: flex;
+	justify-content: space-around;
+	margin: 5% 0;
+
+	.home-content {
+		padding: 2% 2%;
+		width: 46%;
+		// border: 1px solid orange;
+
+		h3 {
+			font-family: 'Rock Salt', cursive;
+			margin: 3% 0;
+		}
+
+		p {
+			font-family: 'Cinzel', serif;
+		}
+	}	
+}
+
+#education {
+	display: flex;
+	justify-content: space-evenly;
+
+	.education-top {
+		width: 100%;
+		margin: 5% 0;
+		// border: 1px solid green;
+
+		.education-content {
+
+			h3 {
+				font-family: 'Architects Daughter', cursive;
+				font-size: 1.3rem;
+				margin: 5% 0;
+			}
+
+			h4 {
+				font-family: 'Architects Daughter', cursive;
+				margin: 2% 0;
+			}
+
+			p {
+				font-family: 'Cinzel', serif;
+				margin: 1.5% 0;
+			}
+		}
+	}
+}
+
+#experience {
+
+	.experience-top {
+		margin: 5% 0;
+
+		.experience-content {
+			margin: 2% 0;
+			// border: 1px solid blue;
+
+			h3 {
+				font-family: 'Rock Salt', cursive;
+				font-size: 1.3rem;
+				margin: 2% 0;
+			}
+
+			h4 {
+				font-family: 'Architects Daughter', cursive;
+				margin: 2% 0;
+			}
+
+			p {
+				font-family: 'Cinzel', serif;
+				margin: 1.5% 0;
+			}
+		}
+	}
+}
+
+
+footer {
+	text-align: center;
+	margin: 50px 0;
+	h1 {
+		font-family: 'Rock Salt', cursive;
+	}
+}

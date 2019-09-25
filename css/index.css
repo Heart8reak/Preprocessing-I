@@ -1,1 +1,241 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 80%;
+  background: black;
+  padding: 20px 0;
+}
+header h1 {
+  font-family: 'Rock Salt', cursive;
+  font-size: 2em;
+}
+header h1 a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+}
+nav a {
+  margin: 0 25px;
+  color: white;
+  text-decoration: none;
+  font-family: 'Architects Daughter', cursive;
+}
+.home-top {
+  margin-top: 100px;
+}
+.home-top .img-profile img {
+  width: 50%;
+  border-radius: 50%;
+  margin: 0 25%;
+}
+.home-bottom {
+  display: flex;
+  justify-content: space-around;
+  margin: 5% 0;
+}
+.home-bottom .home-content {
+  padding: 2% 2%;
+  width: 46%;
+}
+.home-bottom .home-content h3 {
+  font-family: 'Rock Salt', cursive;
+  margin: 3% 0;
+}
+.home-bottom .home-content p {
+  font-family: 'Cinzel', serif;
+}
+#education {
+  display: flex;
+  justify-content: space-evenly;
+}
+#education .education-top {
+  width: 100%;
+  margin: 5% 0;
+}
+#education .education-top .education-content h3 {
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.3rem;
+  margin: 5% 0;
+}
+#education .education-top .education-content h4 {
+  font-family: 'Architects Daughter', cursive;
+  margin: 2% 0;
+}
+#education .education-top .education-content p {
+  font-family: 'Cinzel', serif;
+  margin: 1.5% 0;
+}
+#experience .experience-top {
+  margin: 5% 0;
+}
+#experience .experience-top .experience-content {
+  margin: 2% 0;
+}
+#experience .experience-top .experience-content h3 {
+  font-family: 'Rock Salt', cursive;
+  font-size: 1.3rem;
+  margin: 2% 0;
+}
+#experience .experience-top .experience-content h4 {
+  font-family: 'Architects Daughter', cursive;
+  margin: 2% 0;
+}
+#experience .experience-top .experience-content p {
+  font-family: 'Cinzel', serif;
+  margin: 1.5% 0;
+}
+footer {
+  text-align: center;
+  margin: 50px 0;
+}
+footer h1 {
+  font-family: 'Rock Salt', cursive;
+}
