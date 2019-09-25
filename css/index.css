@@ -136,113 +136,174 @@ body {
   height: 100%;
 }
 .container {
-  width: 80%;
+  width: 800px;
   margin: 0 auto;
+  border-top: 1px solid black;
 }
-header {
+@media (max-width: 500px) {
+  .container {
+    width: 400px;
+  }
+}
+.container header {
   display: flex;
   justify-content: space-between;
   position: fixed;
   top: 0;
-  width: 80%;
+  width: 800px;
   background: black;
   padding: 20px 0;
 }
-header h1 {
+@media (max-width: 500px) {
+  .container header {
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+  }
+  .container header nav {
+    flex-direction: column;
+    align-content: center;
+    margin-top: 20px;
+  }
+  .container header nav a {
+    margin: 10px;
+  }
+}
+.container header h1 {
   font-family: 'Rock Salt', cursive;
   font-size: 2em;
 }
-header h1 a {
+.container header h1 a {
   color: white;
   text-decoration: none;
   margin: 0 20px;
 }
-nav {
+.container nav {
   display: flex;
   justify-content: space-evenly;
   color: white;
 }
-nav a {
+.container nav a {
   margin: 0 25px;
   color: white;
   text-decoration: none;
   font-family: 'Architects Daughter', cursive;
 }
-section {
+.container section {
   padding-top: 75px;
 }
-.home-top .img-profile img {
-  width: 50%;
-  border-radius: 50%;
-  margin: 0 25%;
+@media (max-width: 500px) {
+  .container section {
+    padding-top: 175px;
+  }
 }
-.home-bottom {
+.container .home-top {
   display: flex;
   justify-content: space-around;
-  margin: 5% 0;
+  margin: 2% 0;
 }
-.home-bottom .home-content {
+.container .home-top .img-profile img {
+  width: 60%;
+  border-radius: 50%;
+  margin: 0 20%;
+}
+.container .home-top .home-content {
   padding: 2% 0.5%;
-  width: 46%;
+  width: 100%;
 }
-.home-bottom .home-content h3 {
+.container .home-top .home-content h3 {
   font-family: 'Rock Salt', cursive;
   margin: 3% 0;
 }
-.home-bottom .home-content p {
+.container .home-top .home-content p {
   font-family: 'Cinzel', serif;
 }
-#education {
-  display: flex;
-  justify-content: space-evenly;
+@media (max-width: 500px) {
+  .container .home-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .home-top .home-top {
+    width: 100%;
+  }
 }
-#education .education-top {
+.container .btn {
+  text-align: center;
+  margin: 7% 0;
+}
+.container .btn a {
+  text-decoration: none;
+}
+.container .btn a button {
+  padding: 5px 20px;
+  background: #cd4148;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Rock Salt', cursive;
+  font-size: 1rem;
+}
+.container #education {
+  display: flex;
+  justify-content: space-between;
+}
+.container #education .education-top {
   width: 100%;
   margin: 5% 0;
 }
-#education .education-top .education-content {
+.container #education .education-top .education-content {
   padding: 0 1.5%;
 }
-#education .education-top .education-content h3 {
+.container #education .education-top .education-content h3 {
   font-family: 'Architects Daughter', cursive;
   font-size: 1.5rem;
   margin: 5% 0;
 }
-#education .education-top .education-content h4 {
+.container #education .education-top .education-content h4 {
   font-family: 'Architects Daughter', cursive;
   margin: 2% 0;
 }
-#education .education-top .education-content p {
+.container #education .education-top .education-content p {
   font-family: 'Cinzel', serif;
   margin: 1.5% 0;
 }
-#experience .experience-top {
+@media (max-width: 500px) {
+  .container #education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container #education .education-top {
+    width: 100%;
+  }
+}
+.container #experience .experience-top {
   margin: 5% 0;
 }
-#experience .experience-top .experience-content {
+.container #experience .experience-top .experience-content {
   margin: 2% 0;
 }
-#experience .experience-top .experience-content h3 {
+.container #experience .experience-top .experience-content h3 {
   font-family: 'Rock Salt', cursive;
   font-size: 1.3rem;
   margin: 2% 0;
 }
-#experience .experience-top .experience-content h4 {
+.container #experience .experience-top .experience-content h4 {
   font-family: 'Architects Daughter', cursive;
   margin: 2% 0;
 }
-#experience .experience-top .experience-content p {
+.container #experience .experience-top .experience-content p {
   font-family: 'Cinzel', serif;
   margin: 1.5% 0;
 }
-footer {
+.container footer {
   text-align: center;
   margin: 50px 0;
 }
-footer h1 {
+.container footer h1 {
   font-family: 'Rock Salt', cursive;
 }
-footer h1 i {
+.container footer h1 i {
   font-size: 2rem;
-  color: red;
+  color: #cd4148;
 }
