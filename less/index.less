@@ -65,10 +65,16 @@ html, body {
 
 @primary-color: #cd4148;
 
+
+
 .container {
 	width: 800px;
 	margin: 0 auto;
-	border-top: 1px solid black;
+	// border-top: 1px solid black;
+
+	@media(max-width: 800px) {
+		width: 700px;
+	}// Media Query 800px
 
 	@media(max-width: 500px) {
 		width: 400px;	
@@ -79,10 +85,14 @@ html, body {
 		justify-content: space-between;
 		position: fixed;
 		top: 0;
-		// border: 1px solid blue;
+		border: 1px solid blue;
 		width: 800px;
 		background: black;
 		padding: 20px 0;
+
+		@media(max-width: 800px) {
+			width: 700px;
+		}
 	
 		@media(max-width: 500px) {
 			flex-direction: column;
@@ -99,6 +109,8 @@ html, body {
 				}
 			}
 		}// Media Query 500px
+
+		
 	
 		h1 {
 			font-family: 'Rock Salt', cursive;
