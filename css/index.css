@@ -168,8 +168,8 @@ nav a {
   text-decoration: none;
   font-family: 'Architects Daughter', cursive;
 }
-.home-top {
-  margin-top: 100px;
+section {
+  padding-top: 75px;
 }
 .home-top .img-profile img {
   width: 50%;
