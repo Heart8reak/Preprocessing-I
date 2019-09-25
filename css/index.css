@@ -182,7 +182,7 @@ nav a {
   margin: 5% 0;
 }
 .home-bottom .home-content {
-  padding: 2% 2%;
+  padding: 2% 0.5%;
   width: 46%;
 }
 .home-bottom .home-content h3 {
@@ -200,9 +200,12 @@ nav a {
   width: 100%;
   margin: 5% 0;
 }
+#education .education-top .education-content {
+  padding: 0 1.5%;
+}
 #education .education-top .education-content h3 {
   font-family: 'Architects Daughter', cursive;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   margin: 5% 0;
 }
 #education .education-top .education-content h4 {
