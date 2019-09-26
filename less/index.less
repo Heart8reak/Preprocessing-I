@@ -63,7 +63,42 @@ html, body {
 // Less Global Variables
 // ########################
 
+// Colors
 @primary-color: #cd4148;
+
+
+// Fonts
+@big-letters: 'Rock Salt', cursive;
+@small-letters: 'Architects Daughter', cursive;
+@reading-letters: 'Cinzel', serif;
+
+
+// Download Button Mixin
+.download-btn {
+	padding: 5px 20px;;
+	background: @primary-color;
+	border-radius: 5px;
+	color: white;
+	font-family: @big-letters;
+	font-size: .8rem;
+	transition: 1s;
+}
+
+.button-hover {
+	background: white;
+	color: @primary-color;
+	border: 1px solid @primary-color;
+}
+
+.icon-tag {
+	font-size: 3rem;
+	color: black;
+	transition: .5s;
+}
+
+.icon-hover {
+	color: @primary-color;
+}
 
 
 
@@ -85,7 +120,7 @@ html, body {
 		justify-content: space-between;
 		position: fixed;
 		top: 0;
-		border: 1px solid blue;
+		border: 1px solid black;
 		width: 800px;
 		background: black;
 		padding: 20px 0;
@@ -109,11 +144,10 @@ html, body {
 				}
 			}
 		}// Media Query 500px
-
 		
 	
 		h1 {
-			font-family: 'Rock Salt', cursive;
+			font-family: @big-letters;
 			font-size: 2em;
 			
 			a {
@@ -133,7 +167,7 @@ html, body {
 			margin: 0 25px;
 			color: white;
 			text-decoration: none;
-			font-family: 'Architects Daughter', cursive;
+			font-family: @small-letters;
 		}
 	}// Nav
 	
@@ -141,7 +175,7 @@ html, body {
 		padding-top: 75px;
 	
 		@media(max-width: 500px) {
-			padding-top: 175px
+			padding-top: 200px
 			
 		}// Media Query 500px
 	
@@ -167,12 +201,12 @@ html, body {
 				// border: 1px solid orange;
 		
 				h3 {
-					font-family: 'Rock Salt', cursive;
+					font-family: @small-letters;
 					margin: 3% 0;
 				}
 		
 				p {
-					font-family: 'Cinzel', serif;
+					font-family: @reading-letters;
 				}
 			}	
 	
@@ -195,19 +229,11 @@ html, body {
 			text-decoration: none;
 	
 			button {
-				padding: 5px 20px;;
-				background: @primary-color;
-				border-radius: 5px;
-				color: white;
-				font-family: 'Rock Salt', cursive;
-				font-size: .8rem;
-				transition: 1s;
+				.download-btn();
 			}
 
 			button:hover {
-				background: white;
-				color: @primary-color;
-				border: 1px solid @primary-color;
+				.button-hover();
 			}
 		}
 	}// btn
@@ -225,18 +251,18 @@ html, body {
 				padding: 0 1.5%;
 	
 				h3 {
-					font-family: 'Architects Daughter', cursive;
+					font-family: @small-letters;
 					font-size: 1.5rem;
 					margin: 5% 0;
 				}
 	
 				h4 {
-					font-family: 'Architects Daughter', cursive;
+					font-family: @small-letters;
 					margin: 2% 0;
 				}
 	
 				p {
-					font-family: 'Cinzel', serif;
+					font-family: @reading-letters;
 					margin: 1.5% 0;
 				}
 			}
@@ -263,22 +289,37 @@ html, body {
 				// border: 1px solid blue;
 	
 				h3 {
-					font-family: 'Rock Salt', cursive;
+					font-family: @big-letters;
 					font-size: 1.3rem;
 					margin: 2% 0;
 				}
 	
 				h4 {
-					font-family: 'Architects Daughter', cursive;
+					font-family: @small-letters;
 					margin: 2% 0;
 				}
 	
 				p {
-					font-family: 'Cinzel', serif;
+					font-family: @reading-letters;
 					margin: 1.5% 0;
 				}
 			}
 		}
+	}
+
+	.contact-content {
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		margin-bottom: 150px;
+
+		a {
+			.icon-tag()
+		}
+		a:hover {
+			.icon-hover()
+		}
+
 	}
 	
 	
@@ -286,7 +327,7 @@ html, body {
 		text-align: center;
 		margin: 50px 0;
 		h1 {
-			font-family: 'Rock Salt', cursive;
+			font-family: @big-letters;
 			i {
 				font-size: 2rem;
 				color: @primary-color;

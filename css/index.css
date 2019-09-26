@@ -135,6 +135,28 @@ body {
   margin: 0;
   height: 100%;
 }
+.download-btn {
+  padding: 5px 20px;
+  background: #cd4148;
+  border-radius: 5px;
+  color: white;
+  font-family: 'Rock Salt', cursive;
+  font-size: 0.8rem;
+  transition: 1s;
+}
+.button-hover {
+  background: white;
+  color: #cd4148;
+  border: 1px solid #cd4148;
+}
+.icon-tag {
+  font-size: 3rem;
+  color: black;
+  transition: 0.5s;
+}
+.icon-hover {
+  color: #cd4148;
+}
 .container {
   width: 800px;
   margin: 0 auto;
@@ -154,7 +176,7 @@ body {
   justify-content: space-between;
   position: fixed;
   top: 0;
-  border: 1px solid blue;
+  border: 1px solid black;
   width: 800px;
   background: black;
   padding: 20px 0;
@@ -204,7 +226,7 @@ body {
 }
 @media (max-width: 500px) {
   .container section {
-    padding-top: 175px;
+    padding-top: 200px;
   }
 }
 .container .home-top {
@@ -222,7 +244,7 @@ body {
   width: 100%;
 }
 .container .home-top .home-content h3 {
-  font-family: 'Rock Salt', cursive;
+  font-family: 'Architects Daughter', cursive;
   margin: 3% 0;
 }
 .container .home-top .home-content p {
@@ -311,6 +333,20 @@ body {
 .container #experience .experience-top .experience-content p {
   font-family: 'Cinzel', serif;
   margin: 1.5% 0;
+}
+.container .contact-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 150px;
+}
+.container .contact-content a {
+  font-size: 3rem;
+  color: black;
+  transition: 0.5s;
+}
+.container .contact-content a:hover {
+  color: #cd4148;
 }
 .container footer {
   text-align: center;
